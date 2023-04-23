@@ -1318,6 +1318,7 @@ footer {
 	background-color: transparent;
 	position: absolute;
 	bottom: 100px;
+	z-index: 3;
 }
 
 .slick-next {
@@ -1345,11 +1346,14 @@ footer {
     cursor: pointer;
 	background-color: #DDE0E4;	
 	border-radius: 50%;
+	transition: 0.3s;
 }
 
-.slick-active {
+.slick-dots .slick-active {
 	width: 45px;
-	/* background-color: #F53838; */
+	border-radius: 10px;
+	background-color: #F53838;
+	transition: 0.3s;
 }
 
 .slick-dots button{
