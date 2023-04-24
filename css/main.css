@@ -1,3 +1,7 @@
+html {
+	overflow-x: hidden;
+}
+
 #container {
 	margin-top: 20px;
 }
@@ -835,15 +839,58 @@ h3 {
 	justify-content: center;
 }
 
-.video {
+.videos {
 	display: flex;
 	max-width: 1440px;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	justify-content: center;
+}
+
+.video {
+	display: flex;
+	justify-content: center;
+	width: 32%;
 }
 
 .video img {
-	width: 33%;
+	display: flex;
+	justify-content: center;
+	margin: 0.5%;
+}
+
+.video_full {
+	width: 0vw;
+	height: 0vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	/* display: none; */
+	z-index: 999;
+	transition: 0.3s;
+	overflow: hidden;
+}
+
+.video_full_active {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	transform: translate(0, 0);
+}
+
+.video_full_close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 70px;
+	top: 50px;
+	transition: 0.2s;
+}
+
+.video_full_close:hover {
+	transform: rotate(135deg);
 }
 
 .all_testimoials {
@@ -926,11 +973,15 @@ h3 {
 }
 
 .logos {
-	padding-top: 150px;
-	padding-bottom: 100px;
-	margin: 0 auto;
-	max-width: 1440px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.logos img {
+	width: 100px;
+} 
 
 .accordion .accordion-item {
 	box-shadow: -1px 24px 50px 18px rgba(34, 60, 80, 0.11);
@@ -965,6 +1016,7 @@ h3 {
 
 .accordion button .accordion-title {
 	padding: 1em 1.5em 1em 0;
+	font-size: 22px;
 }
 
 .accordion button .icon {
@@ -1014,7 +1066,7 @@ h3 {
 
 .accordion button[aria-expanded="true"] + .accordion-content {
 	opacity: 1;
-	max-height: 9em;
+	max-height: 200px;
 	transition: all 200ms linear;
 	will-change: opacity, max-height;
 }
@@ -1022,6 +1074,7 @@ h3 {
 .accordion .accordion-content {
 	opacity: 0;
 	max-height: 0;
+	padding: 0 20px 0 20px;
 	overflow: hidden;
 	transition: opacity 200ms linear, max-height 200ms linear;
 	will-change: opacity, max-height;
@@ -1393,4 +1446,8 @@ footer {
     border: 0;
     outline: none;
     background: transparent;
+}
+
+.img__perspective {
+	transition: 0.1s;
 }

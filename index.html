@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body>
-    <div class="top__header">
+    <nav class="top__header">
         <div class="container">
             <div class="top_header_logo">
                 <img src="img/logo_hello.svg" alt="">
@@ -37,7 +38,7 @@
                 <button class="zakaz_top_white">Заказать</button>
             </div>
         </div>
-    </div>
+    </nav>
 
     <section id="one" >
         <div class="slider_main" id="one_inner_block">
@@ -103,11 +104,11 @@
         </div>
     </section>
 
-    <section id="two">
+    <section id="two" data-aos="fade-right" data-aos-delay="100">
         <div class="header_block">Что такое Турбосайт?</div>
             <div class="two_inner" id="two_inner_block">
                 <div class="two_inner_left">
-                    <img src="img/two_img.png" alt="">
+                    <img src="img/two_img.png" alt="" class="img__perspective">
                 </div>
                 <div class="two_inner_right">
                     "Турбосайт". Это готовое решение для тех, кто хочет получить качественный сайт под ключ за минимальное время и деньги.
@@ -126,7 +127,7 @@
         </div> 
     </section>
 
-    <section id="three" style="display: none;" >
+    <section id="three" style="display: none;" data-aos="fade-left" data-aos-delay="100">
         <div class="carousel">
             <div class="carousel-item">
                 <div class="carousel-box">
@@ -252,7 +253,7 @@
         <div class="cursor cursor2"></div>
     </section>
 
-    <section id="four">
+    <section id="four" data-aos="fade-right" data-aos-delay="100">
         <div class="two_inner">
             <div class="two_inner_left">
                 <div class="slider_main_header">Удобная система управления сайтом</div>
@@ -268,20 +269,15 @@
             </div>
             <div class="two_inner_right">
                 <img src="img/bitrix_logo.svg" alt="">
-                <img src="img/bitrix.jpg" alt="">
-                
-
+                <img src="img/bitrix.jpg" alt="" class="img__perspective">
             </div>
         </div>
     </section>
 
-    <section id="five">
+    <section id="five" data-aos="fade-left" data-aos-delay="100">
         <div class="two_inner">
             <div class="two_inner_left">
-                
-                <img src="img/adaptive.jpg" alt="">
-                
-                    
+                <img src="img/adaptive.jpg" alt="" class="img__perspective">           
             </div>
             <div class="two_inner_right">
             
@@ -300,7 +296,7 @@
         </div>
     </section>
 
-    <section id="six">
+    <section id="six" data-aos="fade-right" data-aos-delay="100">
         <div class="header_block">Для кого разработано решение Турбосайт</div>
         <ul class="biznes_napravlenia">
             <li><img class="biznes_img" src="img/icon/forest.svg" alt=""> Базы отдыха</li>
@@ -322,7 +318,7 @@
         
     </section> 
 
-    <section id="seven">
+    <section id="seven" data-aos="fade-left" data-aos-delay="100">
         <div class="header_block">Так в чем же разница?</div>
         <div class="two_inner">
             <div class="two_inner_left" id="polosa">
@@ -368,7 +364,7 @@
         </div>
     </section>
 
-    <section id="eight">
+    <section id="eight" data-aos="fade-right" data-aos-delay="100">
         <div class="header_block">Узнайте точную стоимость вашего сайта</div>
 
         <div class="header_block_small">Турбосайт и Турбосайт 2.0 выглядят совершенно одинаково однако отличаются по функционалу</div>
@@ -449,13 +445,10 @@
     
     </section>
 
-    <section id="nine">
+    <section id="nine" data-aos="fade-left" data-aos-delay="100">
         <div class="two_inner">
             <div class="two_inner_left">
-                
-                <img src="img/itog.png" alt="">
-                
-                    
+                <img src="img/itog.png" alt="" class="img__perspective">  
             </div>
             <div class="two_inner_right">
             
@@ -483,7 +476,7 @@
         </div>
     </section>
 
-    <section class="kak_rabotaem">
+    <section class="kak_rabotaem" data-aos="fade-right" data-aos-delay="100">
         <div class="header_block">Как мы работаем</div>
         <div class="slider_inner_header_small">В нашей работе все максимально прозрачно, быстро и срочно, мы работаем на качество с максимальынм кофортом для вас. Вы получате е полностью готовый сайт за 2 дня</div>
         <div class="shema_raboty">
@@ -544,7 +537,7 @@
         </div>
     </section>
 
-    <section id="ten">
+    <section id="ten" data-aos="fade-left" data-aos-delay="100">
         <div class="header_block">Отзывы наших дорогих клиентов</div>
         <div class="slider_inner_header_small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br> Aenean commodo ligula eget dolor. Aenean massa.</div>
     
@@ -594,15 +587,50 @@
         </div>
     </section>
 
-    <section id="eleven">
+    <section id="eleven">   
         <div class="header_block">Видеоотзывы</div>
-        <div class="video">
-            <img src="img/vid.jpg" alt="">
-            <img src="img/vid1.jpg" alt="">
-            <img src="img/vid2.jpg" alt="">
-            <img src="img/vid3.jpg" alt="">
-            <img src="img/vid4.jpg" alt="">
-            <img src="img/vid5.jpg" alt="">
+        <div class="videos">
+            <div class="video">
+                <img src="img/vid.jpg" alt="">
+                <div class="video_full">
+                    <img src="img/icon/cancel.png" alt="" class="video_full_close">
+                </div>
+            </div>
+
+            <div class="video">
+                <img src="img/vid1.jpg" alt="">
+                <div class="video_full">
+                    <img src="img/icon/cancel.png" alt="" class="video_full_close">
+                </div>
+            </div>
+
+            <div class="video">
+                <img src="img/vid2.jpg" alt="">
+                <div class="video_full">
+                    <img src="img/icon/cancel.png" alt="" class="video_full_close">
+                </div>
+            </div>
+
+            <div class="video">
+                <img src="img/vid3.jpg" alt="">
+                <div class="video_full">
+                    <img src="img/icon/cancel.png" alt="" class="video_full_close">
+                </div>
+            </div>
+
+            <div class="video">
+                <img src="img/vid4.jpg" alt="">
+                <div class="video_full">
+                    <img src="img/icon/cancel.png" alt="" class="video_full_close">
+                </div>
+            </div>
+
+            <div class="video">
+                <img src="img/vid5.jpg" alt="">
+                <div class="video_full">
+                    <img src="img/icon/cancel.png" alt="" class="video_full_close">
+                </div>
+            </div>
         </div>
         <span class="all_testimoials">Все отзывы</span>
         <button class="zakaz">Оставить свой отзыв </button>
@@ -610,71 +638,69 @@
     
     </section>
 
-    <section id="twelve">
-        <div class="header_block">Ответы на часто задаваемые вопросы</div>
-        <div class="slider_inner_header_small">Английская версия сайта и региональность, чтобы покорять новые города, страны и континенты.</div>
-        <div>
-            
-            <div class="accordion">
-                <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+    <section id="twelve" data-aos="fade-left" data-aos-delay="100">
+        <div class="container">
+            <div class="header_block">Ответы на часто задаваемые вопросы</div>
+            <div class="slider_inner_header_small">Английская версия сайта и региональность, чтобы покорять новые города, страны и континенты.</div>
+            <div>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                    </div>
                 </div>
                 </div>
-                <div class="accordion-item">
-                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Я оплатил, получил письмо, что дальше?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-                </div>
-            </div>
-            </div>
-            
+        </div>
     </section>
 
     <section id="twelve">
-        <div class="header_block">Работаем по всей Росии и ближнему зарубежью</div>
-        <div class="slider_inner_header_small">Английская версия сайта и региональность, чтобы покорять новые города, страны и континенты.</div>
-        <img src="img/map.png" alt="">
-        <div class="logos">
-        <div class="logos-slider slider">
-                <div class="slide"><img src="img/logo2.png"></div>
-                <div class="slide"><img src="img/logo2.png"></div>
-                <div class="slide"><img src="img/logo2.png"></div>
-                <div class="slide"><img src="img/logo2.png"></div>
-                <div class="slide"><img src="img/logo2.png"></div>
-                <div class="slide"><img src="img/logo2.png"></div>
-                <div class="slide"><img src="img/logo2.png"></div>
-                <div class="slide"><img src="img/logo2.png"></div>
-            </div>
-        </div>
-    
-        </div>
-        
+        <div class="container">
+            <div class="header_block">Работаем по всей Росии и ближнему зарубежью</div>
+            <div class="slider_inner_header_small">Английская версия сайта и региональность, чтобы покорять новые города, страны и континенты.</div>
+            <img src="img/map.png" alt="">
+            <div class="logos">
+                <img src="img/logo2.png">
+                <img src="img/logo2.png">
+                <img src="img/logo2.png">
+                <img src="img/logo2.png">
+                <img src="img/logo2.png">
+                <img src="img/logo2.png">
+                <img src="img/logo2.png">
+                <img src="img/logo2.png">
+            </div>  
+        </div>      
     </section>
 
     <footer>
-            <div class="prizyv">
-                <div class="prizyv_inner">
+        <div class="prizyv">
+            <div class="prizyv_inner">
                 <div class="prizyv_header">Не тратьте время на создание сайта - мы сделаем это быстро и качественно!</div>
                 <div class="prizyv_text">Если у вас есть промокод введите его в соответствующее поле в бланке заказа</div>
             </div>
@@ -737,6 +763,7 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" scr="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
 
     <script type="text/javascript">
         $(document).ready(() => {
@@ -748,6 +775,18 @@
                 autoplay: true,
                 autoplaySpeed: 5000,
                 arrows: true
+            });
+        });
+
+        $(document).ready(() => {
+            $('.logos').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
             });
         });
     </script>
@@ -771,6 +810,10 @@
         })
     </script>
 
+    <script>AOS.init();</script>
+    <script src="js/reviews.js"></script>
+    <script src="js/perspective.js"></script>
+    <script src="js/video_full.js"></script>
     <script src="js/tarif.js"></script>
     <script src="js/main.js"></script>
 </body>
