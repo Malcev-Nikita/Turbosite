@@ -2518,6 +2518,10 @@ ul {
 		margin-top: 20px;
 	}
 
+	.foooter_menu_left_mobile .foooter_menu_left_text, .foooter_menu_left_mobile .copyright {
+		color: #353535;
+	}
+
 	.calc__content {
 		width: 95vw;
 		height: 98vh;
@@ -2575,10 +2579,11 @@ ul {
 
 	.calc__promo_button {
 		margin-top: 10px;
-		width: 60px;
+		width: 75px;
 		position: absolute;
-		top: -10px;
-		right: 5%;
+		top: -9px;
+    	right: 20px;
+		height: 48px;
 	}
 
 	.calc__promo_notification {
@@ -2623,6 +2628,10 @@ ul {
 		width: 50%;
 		font-size: 18px;
 		margin: 5px;
+	}
+
+	#eleven .zakaz {
+		width: 97%;
 	}
 
 	#one .slider_inner_mobile .video__header {
